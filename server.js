@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
+const cors = require("cors");
+app.use(cors());
+
 
 const dealers = [
   { id: 1, name: "Dealer A", productId: 1, price: 550 },
